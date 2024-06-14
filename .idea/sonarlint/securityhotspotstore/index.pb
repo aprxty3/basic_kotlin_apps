@@ -13,3 +13,5 @@ h
 8app/src/main/java/com/example/basic_apps/MoveActivity.kt,1/1/112e5eabd532ef9c88d5c9ddac2e2c3f832cac56
 P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+h
+8app/src/main/java/com/example/basic_apps/MoveWithData.kt,0/6/06799b461f9c204122e3003ef0d07d5be4dcc9f6
