@@ -5,4 +5,20 @@
     <string name="tinggi">Tinggi</string>
     <string name="lebar">Lebar</string>
     <string name="panjang">Panjang</string>
+
+    <string name="move_activity">Pindah Activity</string>
+    <string name="move_with_data">Pindah Activity dengan Data</string>
+    <string name="move_with_object">Pindah Activity dengan Object</string>
+    <string name="dial_number">Dial a Number</string>
+    <string name="move_for_result">Pindah Activity for Result</string>
+    <string name="choose_number">Pilih angka yang kamu suka</string>
+    <string name="_50">50</string>
+    <string name="_100">100</string>
+    <string name="_150">150</string>
+    <string name="_200">200</string>
+    <string name="choose">Pilih</string>
+    <string name="data_received">Data yang diterima:</string>
+    <string name="object_received">Object yang diterima:</string>
+    <string name="this_is_move_activity">This is Move Activity</string>
+
 </resources>

@@ -7,3 +7,9 @@ Q.idea/sonarlint/securityhotspotstore/8/2/82fa05cb560d7628949106bf929069d273da41
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+f
+6app/src/main/java/com/example/basic_apps/Calculator.kt,4/e/4e1525710a822824d87a26a5f5494bc02614d530
+h
+8app/src/main/java/com/example/basic_apps/MoveActivity.kt,1/1/112e5eabd532ef9c88d5c9ddac2e2c3f832cac56
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
