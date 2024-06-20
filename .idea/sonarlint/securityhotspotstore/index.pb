@@ -15,3 +15,9 @@ P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
 h
 8app/src/main/java/com/example/basic_apps/MoveWithData.kt,0/6/06799b461f9c204122e3003ef0d07d5be4dcc9f6
+b
+2app/src/main/java/com/example/basic_apps/Person.kt,1/7/1707ef52277a9cb59a53a17c71d37a0266fe9b4f
+j
+:app/src/main/java/com/example/basic_apps/MoveWithObject.kt,3/d/3d70249a8b7bc25c90965571089147554d352170
+D
+app/build.gradle.kts,d/2/d2a4383452aad84a18429a5844d31330a012a9e6
