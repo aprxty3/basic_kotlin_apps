@@ -1,82 +1,39 @@
 package com.example.basic_apps
 
-import android.content.Intent
-import android.net.Uri
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
-    private lateinit var tvResult: TextView
+    private lateinit var btnSetValue: Button
+    private lateinit var tvText: TextView
 
-    private val resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-        if (result.resultCode == MoveForResult.RESULT_CODE) {
-            val selectedValue = result.data?.getIntExtra(MoveForResult.EXTRA_SELECTED_VALUE, 0)
-            tvResult.text = "Hasil: $selectedValue"
-        }
-    }
-
+    private var names = ArrayList<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnMoveActivity: Button = findViewById(R.id.button_move)
-        btnMoveActivity.setOnClickListener(this)
+        tvText = findViewById(R.id.tv_text)
+        btnSetValue = findViewById(R.id.btn_set_value)
 
-        val btnMoveWithData: Button = findViewById(R.id.button_move_with_data)
-        btnMoveWithData.setOnClickListener(this)
+        btnSetValue.setOnClickListener(this)
 
-        val btnMoveWithObject: Button = findViewById(R.id.button_move_with_object)
-        btnMoveWithObject.setOnClickListener(this)
-
-        val btnDialPhone: Button = findViewById(R.id.button_dial_number)
-        btnDialPhone.setOnClickListener(this)
-
-        val btnMoveForResult: Button = findViewById(R.id.btn_move_for_result)
-        btnMoveForResult.setOnClickListener(this)
-        tvResult = findViewById(R.id.tv_result)
+        names.add("Dicoding")
+        names.add("Academy")
+        names.add("Indonesia")
     }
 
     override fun onClick(v: View?) {
-        when (v?.id) {
-            R.id.button_move -> {
-                val moveIntent = Intent(this@MainActivity, MoveActivity::class.java)
-                startActivity(moveIntent)
+        if (v?.id == R.id.btn_set_value) {
+            Log.d("MainActivity", names.toString())
+            val name = StringBuilder()
+            for (i in 0 until names.size) {
+                name.append(names[i]).append("\n")
             }
-
-            R.id.button_move_with_data -> {
-                val moveWithDataIntent = Intent(this@MainActivity, MoveWithData::class.java)
-                moveWithDataIntent.putExtra(MoveWithData.EXTRA_NAME, "DicodingAcademy")
-                moveWithDataIntent.putExtra(MoveWithData.EXTRA_AGE, 5)
-                startActivity(moveWithDataIntent)
-            }
-
-            R.id.button_move_with_object -> {
-                val person = Person(
-                    "DicodingAcademy",
-                    5,
-                    "Ajiii",
-                    "Bandung"
-                )
-
-                val moveWithObjectIntent = Intent(this@MainActivity, MoveWithObject::class.java)
-                moveWithObjectIntent.putExtra(MoveWithObject.EXTRA_PERSON, person)
-                startActivity(moveWithObjectIntent)
-            }
-
-            R.id.button_dial_number -> {
-                val phoneNumber = "081210841083"
-                val dialPhoneIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber"))
-                startActivity(dialPhoneIntent)
-            }
-
-            R.id.btn_move_for_result -> {
-                val moveForResultIntent = Intent(this@MainActivity, MoveForResult::class.java)
-                resultLauncher.launch(moveForResultIntent)
-            }
+            tvText.text = name.toString()
         }
     }
 }

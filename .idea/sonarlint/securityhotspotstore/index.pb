@@ -23,3 +23,5 @@ D
 app/build.gradle.kts,d/2/d2a4383452aad84a18429a5844d31330a012a9e6
 i
 9app/src/main/java/com/example/basic_apps/MoveForResult.kt,2/b/2b69e8981fbee84de0b752896445be0f42857a4f
+b
+2app/src/main/java/com/example/basic_apps/Intent.kt,0/7/07bfa417dce7e22b98dead87bc7a5afa4361694b
