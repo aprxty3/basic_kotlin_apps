@@ -1,9 +1,10 @@
-package com.example.basic_apps
+package com.example.basic_apps.intent
 
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.basic_apps.R
 
 class MoveWithObject : AppCompatActivity() {
 

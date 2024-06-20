@@ -1,4 +1,4 @@
-package com.example.basic_apps
+package com.example.basic_apps.intent
 
 import android.content.Intent
 import android.net.Uri
@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.example.basic_apps.R
 
 class Intent : AppCompatActivity(), View.OnClickListener {
     private lateinit var tvResult: TextView

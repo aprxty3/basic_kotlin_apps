@@ -22,19 +22,19 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".MoveForResult"
+                android:name=".intent.MoveForResult"
                 android:exported="false"/>
         <activity
-                android:name=".MoveWithObject"
+                android:name=".intent.MoveWithObject"
                 android:exported="false"/>
         <activity
-                android:name=".MoveWithData"
+                android:name=".intent.MoveWithData"
                 android:exported="false"/>
         <activity
-                android:name=".MoveActivity"
+                android:name=".intent.MoveActivity"
                 android:exported="false"/>
         <activity
-                android:name=".Intent"
+                android:name=".intent.Intent"
                 android:exported="false"/>
 
     </application>

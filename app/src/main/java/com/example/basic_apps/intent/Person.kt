@@ -1,4 +1,4 @@
-package com.example.basic_apps
+package com.example.basic_apps.intent
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

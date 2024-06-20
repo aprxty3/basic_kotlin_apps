@@ -1,8 +1,9 @@
-package com.example.basic_apps
+package com.example.basic_apps.intent
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.basic_apps.R
 
 class MoveWithData : AppCompatActivity() {
 

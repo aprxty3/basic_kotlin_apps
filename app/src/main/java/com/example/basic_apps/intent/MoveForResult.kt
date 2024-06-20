@@ -1,4 +1,4 @@
-package com.example.basic_apps
+package com.example.basic_apps.intent
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.RadioGroup
+import com.example.basic_apps.R
 
 class MoveForResult : AppCompatActivity(), View.OnClickListener {
     private lateinit var btnChoose: Button
