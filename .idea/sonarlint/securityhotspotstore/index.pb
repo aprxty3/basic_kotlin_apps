@@ -21,3 +21,5 @@ j
 :app/src/main/java/com/example/basic_apps/MoveWithObject.kt,3/d/3d70249a8b7bc25c90965571089147554d352170
 D
 app/build.gradle.kts,d/2/d2a4383452aad84a18429a5844d31330a012a9e6
+i
+9app/src/main/java/com/example/basic_apps/MoveForResult.kt,2/b/2b69e8981fbee84de0b752896445be0f42857a4f
