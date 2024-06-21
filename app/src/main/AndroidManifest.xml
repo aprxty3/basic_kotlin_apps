@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Basic_apps"
         tools:targetApi="31">
         <activity
+            android:name=".styletheme.StyleThemeOne"
+            android:exported="false" />
+        <activity
             android:name=".viewgroup_course.ConstraintLayout"
             android:exported="false" />
         <activity

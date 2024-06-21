@@ -3,13 +3,88 @@
     <style name="Base.Theme.Basic_apps" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-<!--        <item name="colorPrimary">#FF476810</item>-->
-<!--        <item name="colorOnPrimary">#FFFFFFFF</item>-->
-<!--        <item name="colorPrimaryContainer">#FFC7F089</item>-->
+        <!--        <item name="colorPrimary">#FF476810</item>-->
+        <!--        <item name="colorOnPrimary">#FFFFFFFF</item>-->
+        <!--        <item name="colorPrimaryContainer">#FFC7F089</item>-->
+
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/orange_light</item>
+        <item name="colorOnSecondary">@color/black</item>
 
     </style>
 
-    <style name="Theme.Basic_apps" parent="Base.Theme.Basic_apps" />
+    <style name="TextContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextContent.HeadlineMedium">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.HeadlineMedium</item>
+    </style>
+
+    <style name="TextContent.HeadlineMedium.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextContent.TitleMedium">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.TitleMedium</item>
+    </style>
+
+    <style name="TextContent.TitleMedium.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextContent.TitleMedium.Bold.MarginLeftRight">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <style name="TextContent.BodyMedium">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+    </style>
+
+    <style name="TextContent.BodyMedium.Gray">
+        <item name="android:textColor">@color/colorSubtitle</item>
+    </style>
+
+    <style name="TextContent.BodyMedium.Gray.MarginLeftRight">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <style name="TextContent.BodyMedium.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextContent.BodyMedium.White.MarginAll">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="TextContent.BodyMedium.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonGeneral">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="layout_goneMarginRight">16dp</item>
+        <item name="layout_goneMarginLeft">16dp</item>
+        <item name="layout_goneMarginBottom">16dp</item>
+    </style>
+
+    <style name="ButtonGeneral.SecondaryVariant">
+        <item name="android:backgroundTint">@color/orange</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 
     <style name="TitleStyle">
         <item name="android:layout_width">wrap_content</item>
@@ -35,5 +110,8 @@
         <item name="android:textColor">#FF0000</item>
         <item name="android:textSize">30sp</item>
     </style>
+
+    <style name="Theme.Basic_apps" parent="Base.Theme.Basic_apps" />
+
 
 </resources>
